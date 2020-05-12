@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>ToDo List</title>
+</head>
+
+<body>
+  
+  <h1>WORK TO-DOS</h1>
+
+  <p class="create-instruction">Enter text into the input field to add items to your list (max. 28 characters).</p>
+  
+  <p class="complete-instruction">Click the item to mark it as complete.</p>
+  
+  <p class="remove-instruction">Click the "X" to remove the item from you list.</p>
+
+  <div class="input-container">
+
+    <input id="todo-input" value="" placeholder="New item..." maxlength="28">
+
+    <button id="add-todo–button" onclick="submitTask()">
+      <i class="material-icons">edit</i>
+    </button>
+
+  </div>
+
+  <ul id="list" >
+  </ul>
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
